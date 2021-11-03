@@ -16,11 +16,7 @@ module.exports = {
           path.join(__dirname, './src/partials')
         ]
       },
-    },{
-      test: /\.css$/,
-        use: ['style-loader', 'css-loader?modules=true'],
-        include: path.resolve(__dirname, './src/'),
-    },);
+    });
 
     // Return the altered config
     return config;

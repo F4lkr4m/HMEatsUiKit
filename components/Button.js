@@ -3,10 +3,10 @@ import button from './Button.hbs'
 import PropTypes from "prop-types"
 
 
-function Button({label, color = "black", shape = ""}) {
+function Button({label, color = "black", shape = false}) {
   const classes = [styles.button]
-  classes.push(styles);
-  if (shape === "rounded") {
+
+  if (shape) {
     classes.push(styles.button_shape_rounded);
   }
   switch (color) {
@@ -23,14 +23,13 @@ function Button({label, color = "black", shape = ""}) {
       classes.push(styles.button_color_white);
       break;
   }
-  console.log(classes);
   return button({classes: classes, label: label});
 }
-
-Button.propTypes = {
-  label: PropTypes.string,
-  color: PropTypes.oneOf(["green", "black", "white", "transparent"]),
-  shape: PropTypes.oneOf(["common", "rounded"]),
-}
+//
+// Button.propTypes = {
+//   label: PropTypes.string,
+//   color: PropTypes.oneOf(["green", "black", "white", "transparent"]),
+//   shape: PropTypes.bool,
+// }
 
 export default Button

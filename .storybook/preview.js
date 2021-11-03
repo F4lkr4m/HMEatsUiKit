@@ -1,3 +1,5 @@
+import token from '../tokens/token.scss';  // connect token
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
