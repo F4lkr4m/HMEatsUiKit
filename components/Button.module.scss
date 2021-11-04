@@ -2,8 +2,8 @@
     font-size: var(--buttonFontSize);
     font-weight: var(--font_bold);
     background-color: var(--color-primary);
-    height: var(--buttonHeightMedium);
-    border-radius: var(--buttonBorderRadiusStd);
+    height: var(--buttonHeightMd);
+    border-radius: var(--buttonBorderRadius);
     border: var(--buttonBorder);
     border-color: var(--buttonBorderColor);
 
@@ -21,27 +21,30 @@
     color: black;
 
     &:hover {
-        background-color: var(--buttonHoverColor);
+        background-color: var(--color-primary-hover);
     }
 
     &:active {
-        background-color: var(--buttonActiveColor);
-    }
-
-    @media (min-width: 0px) and (max-width: 860px) {
-        & {
-            font-size: 0;
-        }
+        background-color: var(--color-primary-active);
     }
 
     &_color_black {
         border: 0;
-        background-color: black;
+        background-color: var(--color-black);
         color: white;
     }
 
+    &_color_black path {
+        fill: var(--color-white);
+    }
+
     &_color_black:hover {
-        background-color: rgb(26, 26, 26);
+        background-color: var(--color-black-hover);
+        color: white;
+    }
+
+    &_color_black:active {
+        background-color: var(--color-black-active);
         color: white;
     }
 
@@ -51,8 +54,16 @@
         color: white;
     }
 
+    &_color_green path {
+        fill: var(--color-white);
+    }
+
     &_color_green:hover {
-        background-color: #057f16;
+        background-color: var(--color-green-hover);
+    }
+
+    &_color_green:active {
+        background-color: var(--color-green-active);
     }
 
     &_color_white {
@@ -91,16 +102,16 @@
         margin-left: var(--buttonIconMarginInside);
     }
 
-    &_height_s {
-        height: var(--buttonHeightSmall);
+    &_sm {
+        height: var(--buttonSm);
     }
 
-    &_height_m {
-        height: var(--buttonHeightMedium);
+    &_md {
+        height: var(--buttonHeightMd);
     }
 
-    &_height_b {
-        height: var(--buttonHeightBig);
+    &_bg {
+        height: var(--buttonHeightBg);
     }
 
     &__container {
@@ -108,15 +119,21 @@
         align-items: center;
         margin: auto;
     }
+
+    @media (min-width: 0px) and (max-width: 860px) {
+        & {
+            font-size: 0;
+        }
+    }
 }
 
 .button-icon {
     display: flex;
-    height: var(--buttonHeightBig);
-    width: var(--buttonHeightBig);
+    height: var(--buttonHeightBg);
+    width: var(--buttonHeightBg);
 
     border: 0;
-    border-radius: var(--buttonBorderRadiusStd);
+    border-radius: var(--buttonBorderRadius);
     padding: var(--buttonIconPadding);
     box-sizing: border-box;
 
@@ -127,11 +144,15 @@
     cursor: pointer;
 
     &_color_gray {
-        border: solid 1px rgba(0, 0, 0, 0.12);
+        background-color: var(--color-gray);
     }
 
     &_color_gray:hover {
-        background-color: var(--color-light-gray);
+        background-color: var(--color-gray-hover);
+    }
+
+    &_color_gray:active {
+        background-color: var(--color-gray-active);
     }
 }
 

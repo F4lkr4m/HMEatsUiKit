@@ -2,19 +2,25 @@
   // COLORS
 
   --color-primary: #F6F6F6;
+  --color-primary-hover: #d7d7d7;
+  --color-primary-active: #bdbdbd;
   --color-green: #3E9920;
-  --color-black: black;
-  --color-background-black: rgba(0, 0, 0, 0.71);
-  --color-white: white;
+  --color-green-hover: #327e1a;
+  --color-green-active: #2c6b0d;
+  --color-black: rgba(0, 0, 0);
+  --color-black-hover: rgba(50, 50, 50);
+  --color-black-active: rgba(30, 30, 30);
+  --color-white: #FFFFFF;
   --color-gray: #afafaf;
+  --color-gray-hover: #AFACA7;
+  --color-gray-active: #AFA99F;
   --color-light-gray: #eeeeee;
 
   // BUTTONS VARIABLES
 
-  --buttonHeightSmall: 26px;
-  --buttonHeightMedium: 36px;
-  --buttonHeightBig: 48px;
-
+  --buttonSm: 26px;
+  --buttonHeightMd: 36px;
+  --buttonHeightBg: 48px;
 
   --buttonIconVHeight: 60px;
   --buttonIconVIconSize: 50px;
@@ -22,14 +28,11 @@
 
   --buttonFontSize: 16px;
 
-  --button__icon-size: 14px;
-  --button__icon-nav-size: 24px;
-
   --buttonPaddingHor: 20px; // x paddings inside button
   --buttonIconPadding: 10px; // padding around in icon button
   --buttonIconVPaddingHor: 10px; // x paddings inside vertical icon button
 
-  --buttonBorderRadiusStd: 2px; // std radius
+  --buttonBorderRadius: 2px; // std radius
   --buttonBorderRadiusMedium: 10px; // medium radius
   --buttonBorderRadiusHigh: 16px; // high radius
 
