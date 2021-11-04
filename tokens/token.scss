@@ -1,4 +1,13 @@
 :root {
+  // FONTS
+
+  --raleway-font: Raleway, sans-serif;
+
+  --font_bold: 800;
+  --font_medium: 600;
+  --font_thin: 300;
+
+
   // COLORS
 
   --color-primary: #F6F6F6;
@@ -40,4 +49,8 @@
 
   --buttonBorder: solid 1px;
   --buttonBorderColor: rgba(0, 0, 0, 0.12);
+}
+
+body {
+  font-family: var(--raleway-font);
 }
