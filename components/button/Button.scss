@@ -1,0 +1,189 @@
+.button {
+  font-size: var(--buttonFontSize);
+  font-weight: var(--font_bold);
+  background-color: var(--color-primary);
+  height: var(--buttonHeightMd);
+  border-radius: var(--buttonBorderRadius);
+  border: var(--buttonBorder);
+  border-color: var(--buttonBorderColor);
+
+
+  padding-left: var(--buttonPaddingHor);
+  padding-right: var(--buttonPaddingHor);
+
+  cursor: pointer;
+
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  box-sizing: border-box;
+  color: black;
+
+  &:hover {
+    background-color: var(--color-primary-hover);
+  }
+
+  &:active {
+    background-color: var(--color-primary-active);
+  }
+
+  &_color_black {
+    border: 0;
+    background-color: var(--color-black);
+    color: white;
+  }
+
+  &_color_black path {
+    fill: var(--color-white);
+  }
+
+  &_color_black:hover {
+    background-color: var(--color-black-hover);
+    color: white;
+  }
+
+  &_color_black:active {
+    background-color: var(--color-black-active);
+    color: white;
+  }
+
+  &_color_green {
+    border: 0;
+    background-color: var(--color-green);
+    color: white;
+  }
+
+  &_color_green path {
+    fill: var(--color-white);
+  }
+
+  &_color_green:hover {
+    background-color: var(--color-green-hover);
+  }
+
+  &_color_green:active {
+    background-color: var(--color-green-active);
+  }
+
+  &_color_white {
+    background-color: var(--color-white);
+  }
+
+  &_color_transparent {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+  }
+
+  &_color_transparent:hover {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+  }
+
+  &_shape_rounded {
+    border-radius: var(--buttonBorderRadiusHigh);
+  }
+
+  &_shape_rounded_medium {
+    border-radius: var(--buttonBorderRadiusMedium);
+  }
+
+  &__icon_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: var(--buttonIconMarginInside);
+  }
+
+  &__icon_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: var(--buttonIconMarginInside);
+  }
+
+  &__sm {
+    height: var(--buttonSm);
+  }
+
+  &__md {
+    height: var(--buttonHeightMd);
+  }
+
+  &__bg {
+    height: var(--buttonHeightBg);
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    margin: auto;
+  }
+
+  @media (min-width: 0px) and (max-width: 860px) {
+    & {
+      font-size: 0;
+    }
+  }
+}
+
+.button-icon {
+  display: flex;
+  height: var(--buttonHeightBg);
+  width: var(--buttonHeightBg);
+
+  border: 0;
+  border-radius: var(--buttonBorderRadius);
+  padding: var(--buttonIconPadding);
+  box-sizing: border-box;
+
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+
+  &_color_gray {
+    border: solid 1px rgba(0, 0, 0, 0.12);
+  }
+
+  &_color_gray:hover {
+    background-color: var(--color-light-gray);
+  }
+
+  &_color_gray:active {
+    background-color: var(--color-gray-hover);
+  }
+}
+
+.button-icon-v {
+  display: flex;
+  flex-direction: column;
+  border: 0;
+  padding-left: var(--buttonIconVPaddingHor);
+  padding-right: var(--buttonIconVPaddingHor);
+
+  height: var(--buttonIconVHeight);
+  cursor: pointer;
+
+  &__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-weight: var(--font_bold);
+  }
+
+  &__icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__icon {
+    height: var(--buttonIconVIconSize);
+    width: var(--buttonIconVIconSize);
+    margin-bottom: var(--buttonIconVBottomMargin);
+  }
+}

@@ -1,0 +1,11 @@
+<button class="button
+    {{#if rounded}} button_shape_rounded {{/if}}
+    {{#if size}}button__{{size}}{{/if}}
+    {{#if color}}button_color_{{color}}{{/if}}">
+    {{#if icon}}
+        <div class="button__icon_left">
+            {{{icon}}}
+        </div>
+    {{/if}}
+    {{label}}
+</button>
