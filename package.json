@@ -1,5 +1,5 @@
 {
-  "name": "HMEDesignSystem",
+  "name": "hme-design-system",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -20,7 +20,7 @@
     "@storybook/html": "^6.3.12",
     "@storybook/preset-scss": "^1.0.3",
     "babel-loader": "^8.2.3",
-    "css-loader": "^6.5.0",
+    "css-loader": "^6.5.1",
     "sass": "^1.43.4",
     "sass-loader": "^10.1.1",
     "storybook-css-modules-preset": "^1.1.1",
@@ -29,7 +29,6 @@
   "dependencies": {
     "@storybook/builder-webpack5": "^6.3.12",
     "@storybook/manager-webpack5": "^6.3.12",
-    "expo": "^43.0.2",
     "handlebars": "^4.7.7",
     "handlebars-loader": "^1.7.1"
   }

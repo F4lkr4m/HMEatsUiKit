@@ -62,6 +62,29 @@
 
   --buttonBorder: solid 1px;
   --buttonBorderColor: rgba(0, 0, 0, 0.12);
+
+  // INPUT VARIABLES
+
+  --inputHeight: 48px;
+
+  --inputPaddingHor: 15px;
+
+  --inputFontSizeStd: 16px;
+
+  --inputBorder: 1px solid;
+  --inputBorderColor: #e2e2e2;
+
+  --inputBorderRadius: 2px;
+  --inputBorderRadiusMedium: 10px;
+  --inputBorderRadiusHigh: 16px;
+
+  --inputMarginBottom: 20px;
+
+  --inputLabelTextFontSize: var(--fontSizeLabel);
+  --inputLabelTextColor: var(--color-gray);
+  --inputLabelTextMarginBottom: 4px;
+
+  --inputIconMargin: 7px;  // hor margins for icon with input
 }
 
 body {
