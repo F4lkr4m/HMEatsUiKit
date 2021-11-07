@@ -1,7 +1,7 @@
 import Fonts from '../components/fonts/fonts';
 
 export default {
-  title: "UI/Fonts",
+  title: "Components/Fonts",
   component: Fonts,
 }
 

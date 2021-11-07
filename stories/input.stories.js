@@ -1,9 +1,8 @@
-import Fonts from '../components/fonts/fonts';
 import {Input} from "../components/input/input";
 import {AllInputs} from "../components/input/input";
 
 export default {
-  title: "UI/Inputs",
+  title: "Forms/Inputs",
   component: Input,
   argTypes: {
     borderRadius: {

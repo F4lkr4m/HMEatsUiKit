@@ -1,7 +1,7 @@
 import {Button, ButtonIcon} from "../components/button/Button"
 
 export default {
-  title: "UI/Button",
+  title: "Components/Button",
   component: Button,
   argTypes: {
     rounded: {
