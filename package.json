@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "build-static-webapp": "expo build:web"
   },
   "keywords": [],
   "author": "",
@@ -28,6 +29,7 @@
   "dependencies": {
     "@storybook/builder-webpack5": "^6.3.12",
     "@storybook/manager-webpack5": "^6.3.12",
+    "expo": "^43.0.2",
     "handlebars": "^4.7.7",
     "handlebars-loader": "^1.7.1"
   }
