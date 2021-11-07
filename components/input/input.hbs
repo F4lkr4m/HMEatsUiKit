@@ -1,0 +1,14 @@
+<label class="input-label">
+    <div class="input-label__text">
+        {{label}}
+    </div>
+    <input placeholder="{{placeholder}}"
+           class="input
+                {{#if border}}
+                    input_border
+                    {{#if borderRadius}}
+                        input_radius-border_{{borderRadius}}
+                    {{/if}}
+                {{/if}}
+           ">
+</label>

@@ -1,0 +1,98 @@
+:root {
+  --inputHeight: 48px;
+
+  --inputPaddingHor: 15px;
+
+  --inputFontSizeStd: 16px;
+
+  --inputBorder: 1px solid;
+  --inputBorderColor: #e2e2e2;
+
+  --inputBorderRadius: 2px;
+  --inputBorderRadiusMedium: 10px;
+  --inputBorderRadiusHigh: 16px;
+
+  --inputMarginBottom: 20px;
+
+  --inputLabelTextFontSize: var(--fontSizeLabel);
+  --inputLabelTextColor: var(--color-gray);
+  --inputLabelTextMarginBottom: 4px;
+
+  --inputIconMargin: 7px;  // hor margins for icon with input
+
+}
+
+.input {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  height: var(--inputHeight);
+  padding-left: var(--inputPaddingHor);
+  padding-right: var(--inputPaddingHor);
+  font-size: var(--inputFontSizeStd);
+
+  border: 0;
+  border-bottom: var(--inputBorder);
+  border-color: var(--inputBorderColor);
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+
+  margin-bottom: var(--inputMarginBottom);
+
+  &_border {
+    border-radius: var(--inputBorderRadius);
+    border: var(--inputBorder);
+    border-color: var(--inputBorderColor);
+  }
+
+  &_radius-border_high {
+    border-radius: var(--inputBorderRadiusHigh);
+  }
+
+  &_radius-border_medium {
+    border-radius: var(--inputBorderRadiusMedium);
+  }
+
+  &_border-color_black {
+    border-color: rgba(0, 0, 0, 0.3);
+  }
+
+  &-label {
+    width: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    &__text {
+      font-size: var(--inputLabelTextFontSize);
+      color: var(--inputLabelTextColor);
+      margin-bottom: var(--inputLabelTextMarginBottom);
+    }
+  }
+
+  &-label_with-icon {
+    width: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  &-label__icon {
+    margin-left: var(--inputIconMargin);
+    margin-right: var(--inputIconMargin);
+    margin-bottom: var(--inputMarginBottom);
+  }
+}
+
+input:focus {
+  outline: none;
+}
+
+.red_border_red {
+  border-color: red;
+}
