@@ -1,35 +1,39 @@
 .font_h1 {
-  font-size: 32px;
+  font-size: var(--fontSizeH1);
   font-weight: var(--font_bold);
+  margin-bottom: var(--fontH1-MarginBottom);
 }
 
 .font_h2 {
-  font-size: 24px;
+  font-size: var(--fontSizeH2);
   font-weight: var(--font_bold);
+  margin-bottom: var(--fontH2-MarginBottom);
 }
 
 .font_h3 {
-  font-size: 20px;
+  font-size: var(--fontSizeH3);
   font-weight: var(--font_bold);
+  margin-bottom: var(--fontH3-MarginBottom);
 }
 
 .font_h4 {
-  font-size: 17px;
+  font-size: var(--fontSizeH4);
   font-weight: var(--font_bold);
+  margin-bottom: var(--fontH4-MarginBottom);
 }
 
 .font-body {
-  font-size: 17px;
+  font-size: var(--fontSizeBody);
   font-weight: var(--font_thin);
 }
 
 .font-paragraph {
-  font-size: 15px;
+  font-size: var(--fontSizeParagraph);
   font-weight: var(--font_thin);
 }
 
 .font-label {
-  font-size: 13px;
+  font-size: var(--fontSizeLabel);
   font-weight: var(--font_thin);
 }
 
