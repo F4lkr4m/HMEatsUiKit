@@ -16,6 +16,7 @@ export class DishModal {
     this.desc = desc;
     this.ingredients = ingredients;
     this.radios = radios;
+    this.number = 1;
   }
 
   render() {
@@ -43,8 +44,6 @@ export class DishModal {
       prev += rg.render();
       return prev;
     }, '');
-
-    console.log(radios);
 
     return dishModalTemplate({
       img: this.img,
