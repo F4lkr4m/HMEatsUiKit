@@ -1,5 +1,5 @@
-import {Input} from "../components/input/input";
-import {AllInputs} from "../components/input/input";
+import {Input} from "../src/forms/input/input";
+import {AllInputs} from "../src/forms/input/input";
 
 export default {
   title: "Forms/Inputs",

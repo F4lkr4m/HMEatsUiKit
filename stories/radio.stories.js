@@ -1,4 +1,4 @@
-import {Radio} from "../components/radio/radio";
+import {Radio} from "../src/forms/tickForms/radio/radio";
 
 export default {
   title: "Forms/Radio",

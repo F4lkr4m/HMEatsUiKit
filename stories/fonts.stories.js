@@ -1,4 +1,4 @@
-import Fonts from '../components/fonts/fonts';
+import Fonts from '../src/components/fonts/fonts';
 
 export default {
   title: "Components/Fonts",

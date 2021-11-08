@@ -1,4 +1,4 @@
-import {Checkbox} from "../components/checkbox/checkbox";
+import {Checkbox} from "../src/forms/tickForms/checkbox/checkbox";
 
 export default {
   title: "Forms/Checkbox",

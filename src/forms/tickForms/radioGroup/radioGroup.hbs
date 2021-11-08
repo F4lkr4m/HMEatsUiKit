@@ -1,0 +1,18 @@
+<div class="tick-form-group">
+    <div class="font_h3">{{groupTitle}}</div>
+    {{#each radios}}
+        <label class="tick-form-container">
+            <input id="{{id}}" type="radio" name="{{../radioName}}"
+                {{#if checked}} checked {{/if}}>
+            <span class="tick-form-checkmark tick-form-checkmark-radio"></span>
+            <div class="font-label tick-form-info">
+                <div class="tick-form-info__name">
+                    {{ name }}
+                </div>
+                <div class="tick-form-info__price">
+                    {{ price }}
+                </div>
+            </div>
+        </label>
+    {{/each}}
+</div>

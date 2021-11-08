@@ -1,15 +1,17 @@
-import styles from './radio.scss'
-import checkboxTemplate from './radio.hbs'
+import styles from '../tickForm.scss'
+import checkboxTemplate from './checkbox.hbs'
 
-export class Radio {
+export class Checkbox {
   constructor({
-                name = "",
-                price = "",
-                checked = false,
+    name = "",
+    price = "",
+    checked = false,
+    id = "",
               }) {
     this.name = name;
     this.price = price;
     this.checked = checked;
+    this.id = id;
   }
 
   render() {
@@ -17,6 +19,7 @@ export class Radio {
         name: this.name,
         price: this.price,
         checked: this.checked,
+        id: this.id,
       }
     );
   }
