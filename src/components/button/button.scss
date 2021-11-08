@@ -28,6 +28,10 @@
     background-color: var(--color-primary-active);
   }
 
+  &_text_center {
+    justify-content: center;
+  }
+
   &_color_black {
     border: 0;
     background-color: var(--color-black);

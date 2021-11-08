@@ -1,0 +1,9 @@
+.content-block {
+  width: 100%;
+  background-color: var(--color-white);
+  border-radius: var(--contentBlockRadius);
+  box-shadow: var(--contentBlockBoxShadow);
+
+  box-sizing: border-box;
+  padding: var(--contentBlockPadding);
+}

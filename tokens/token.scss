@@ -113,6 +113,25 @@
   --restaurantBlockMargin: 10px 10px 10px 0; // margin around
   --restaurantBlockMarginHover: 8px 10px 12px 0;
   --restaurantBlockInfoPadding: 16px;
+
+  // MODAL
+
+  --modalOuterPadding: 64px;
+
+  --modalWidth: 700px;
+  --modalRadius: 32px;
+  --modalHeaderMarginBottom: 8px;
+
+  // DISH MODAL
+
+  --modalDishImageHeight: 250px;
+  --modalDishImageMargin: 12px;
+
+  // CONTENT BLOCK
+
+  --contentBlockRadius: 32px;
+  --contentBlockPadding: 64px;
+  --contentBlockBoxShadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0 ,0.19);
 }
 
 .mr {

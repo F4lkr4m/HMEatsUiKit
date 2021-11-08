@@ -1,6 +1,6 @@
-import './Button.scss'
-import button from './Button.hbs'
-import buttonIcon from './ButtonIcon.hbs'
+import './button.scss'
+import button from './button.hbs'
+import buttonIcon from './buttonIcon.hbs'
 
 export class Button {
   constructor({

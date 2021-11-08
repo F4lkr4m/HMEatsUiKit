@@ -1,4 +1,4 @@
-import {Button, ButtonIcon} from "../src/components/button/Button"
+import {Button, ButtonIcon} from "../src/components/button/button"
 
 export default {
   title: "Components/Button",
