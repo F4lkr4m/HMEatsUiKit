@@ -1,0 +1,66 @@
+
+
+:root {
+  --modalOuterPadding: 64px;
+
+  --modalWidth: 700px;
+  --modalRadius: 32px;
+  --modalHeaderMarginBottom: 8px;
+}
+
+.overflow-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow-y: scroll;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.modal {
+  border-radius: var(--modalRadius);
+  background-color: var(--color-white);
+
+  margin: auto;
+  width: var(--modalWidth);
+
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0 ,0.19);
+
+  &-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 100;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &-top-block {
+    padding: calc(var(--modalOuterPadding) / 2) var(--modalOuterPadding) calc(var(--modalOuterPadding) / 2) var(--modalOuterPadding);
+    border-bottom: 1px solid #e2e2e2;
+  }
+
+  &-center-block {
+    padding: calc(var(--modalOuterPadding) / 2) var(--modalOuterPadding) calc(var(--modalOuterPadding) / 2) var(--modalOuterPadding);
+  }
+
+  &-bottom-block {
+    padding: calc(var(--modalOuterPadding) / 2) var(--modalOuterPadding) calc(var(--modalOuterPadding)) var(--modalOuterPadding);
+  }
+
+  &__header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    margin-bottom: var(--modalHeaderMarginBottom);
+  }
+}

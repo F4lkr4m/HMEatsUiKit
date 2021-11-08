@@ -4,13 +4,13 @@ import checkboxTemplate from './radio.hbs'
 export class Radio {
   constructor({
                 name = "",
-                price = "",
+                cost = "",
                 checked = false,
                 id = "",
                 radioName = "",
               }) {
     this.name = name;
-    this.price = price;
+    this.cost = cost;
     this.checked = checked;
     this.id = id;
     this.radioName = radioName;
@@ -19,7 +19,7 @@ export class Radio {
   render() {
     return checkboxTemplate({
         name: this.name,
-        price: this.price,
+        cost: this.cost,
         checked: this.checked,
         id: this.id,
         radioName: this.radioName,

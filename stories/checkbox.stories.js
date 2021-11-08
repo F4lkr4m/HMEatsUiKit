@@ -12,7 +12,7 @@ export const Default = (args) => {
 
 Default.args = {
   name: 'Добавить картошечку?',
-  price: '11 ₽',
+  cost: '11 ₽',
   checked: false,
 }
 
@@ -23,6 +23,6 @@ export const Checked = (args) => {
 
 Checked.args = {
   name: 'Добавить картошечку?',
-  price: '11 ₽',
+  cost: '11 ₽',
   checked: true,
 }

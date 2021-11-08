@@ -17,19 +17,19 @@ Default.args ={
     {
       id: "1",
       name: 'Добавить картошечку?',
-      price: '11 ₽',
+      cost: '11 ₽',
       checked: false,
     },
     {
       id: "2",
       name: 'Добавить картошечку?',
-      price: '11 ₽',
+      cost: '11 ₽',
       checked: false,
     },
     {
       id: "3",
       name: 'Добавить картошечку?',
-      price: '',
+      cost: '',
       checked: false,
     },
   ],
