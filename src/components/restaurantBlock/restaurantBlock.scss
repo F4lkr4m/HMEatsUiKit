@@ -1,18 +1,3 @@
-:root {
-  --restaurant-block_width_primary: 315px;
-  --restaurant-block_height_primary: 188px;
-
-  --restaurant-block__img-widht: 315px;
-  --restaurant-block__img-height: 125px;
-}
-
-:root {
-  --restaurantBlockBorder: solid 1px #e2e2e2;
-  --restaurantBlockRadius: 16px;
-  --restaurantBlockMargin: 10px; // margin around
-  --restaurantBlockInfoPadding: 16px;
-}
-
 .restaurant-block {
   text-decoration: none;
   color: inherit;
@@ -24,7 +9,7 @@
   margin: var(--restaurantBlockMargin);
 
   &:hover {
-    margin: 8px 10px 12px 10px;
+    margin: var(--restaurantBlockMarginHover);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0 ,0.19);
   }
 

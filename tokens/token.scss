@@ -90,6 +90,29 @@
 
   --tickFormMarginBottom: 8px;
   --tickFormInfoMarginLeft: 5px;
+
+  // DISH BLOCK
+
+  --dishHeight: 160px;
+  --dishBorderRadius: 16px;
+  --dishTextBoxPadding: 16px;
+  --dishHoverBorderColor: black;
+  --dishBorder: 1px solid #e2e2e2;
+  --dishMargin: 10px 10px 10px 0;
+
+
+  // RESTAURANT BLOCK
+
+  --restaurant-block_width_primary: 315px;
+  --restaurant-block_height_primary: 188px;
+
+  --restaurant-block__img-widht: 315px;
+  --restaurant-block__img-height: 125px;
+  --restaurantBlockBorder: solid 1px #e2e2e2;
+  --restaurantBlockRadius: 16px;
+  --restaurantBlockMargin: 10px 10px 10px 0; // margin around
+  --restaurantBlockMarginHover: 8px 10px 12px 0;
+  --restaurantBlockInfoPadding: 16px;
 }
 
 body {

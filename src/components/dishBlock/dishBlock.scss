@@ -1,11 +1,3 @@
-:root {
-  --dishHeight: 160px;
-  --dishBorderRadius: 16px;
-  --dishTextBoxPadding: 16px;
-  --dishHoverBorderColor: black;
-  --dishBorder: 1px solid #e2e2e2;
-}
-
 .dish {
   display: flex;
   flex-direction: row;
@@ -14,6 +6,7 @@
   border-radius: var(--dishBorderRadius);
 
   border: var(--dishBorder);
+  margin: var(--dishMargin);
   cursor: pointer;
 
   transition-property: border-color;
