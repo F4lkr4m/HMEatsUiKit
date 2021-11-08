@@ -29,7 +29,7 @@ export const SimpleButton = (args) => {
 
 
 SimpleButton.args = {
-  label: "Press Me",
+  label: "Нажми на меня",
   color: "black",
   rounded: true,
   size: "md",
@@ -42,7 +42,7 @@ export const ButtonWithIcon = (args) => {
 }
 
 ButtonWithIcon.args = {
-  label: "Press Me",
+  label: "Нажми на меня",
   color: "black",
   rounded: true,
   size: "md",
