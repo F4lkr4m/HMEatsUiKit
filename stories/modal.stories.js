@@ -1,5 +1,6 @@
 import {Modal} from "../src/components/modal/modal";
 import {DishModal} from "../src/components/modal/dishModal/dishModal";
+import {ContinueModal} from "../src/components/modal/continueModal/continueModal";
 
 export default {
   title: "Components/Modal",
@@ -72,3 +73,10 @@ dishModal.args = {
     }
   ],
 }
+
+export const continueModal = (args) => {
+  const block = new ContinueModal(args);
+  return block.render();
+}
+
+continueModal.args = {}
