@@ -1,0 +1,55 @@
+.avatar {
+  width: var(--avatarSizeMd);
+  height: var(--avatarSizeMd);
+
+  object-fit: cover;
+  border-radius: var(--avatarBorderRadius);
+
+  &-input-hover:hover {
+    opacity: var(--avatarHoverOpacity);
+  }
+
+  &-input {
+    display: none;
+  }
+
+  &_bg {
+    width: var(--avatarSizeBg);
+    height: var(--avatarSizeBg);
+  }
+
+  &_bg ~ &-find-icon {
+    left: calc(var(--avatarSizeBg) / 2);
+    top: calc(var(--avatarSizeBg) / 2);
+  }
+
+  &_md {
+    width: var(--avatarSizeMd);
+    height: var(--avatarSizeMd);
+  }
+
+  &_md ~ &-find-icon {
+    left: calc(var(--avatarSizeMd) / 2);
+    top: calc(var(--avatarSizeMd) / 2);
+  }
+
+  &_sm {
+    width: var(--avatarSizeSm);
+    height: var(--avatarSizeSm);
+  }
+
+  &_sm ~ &-find-icon {
+    left: calc(var(--avatarSizeSm) / 2);
+    top: calc(var(--avatarSizeSm) / 2);
+  }
+
+  &-find-icon {
+    position: absolute;
+    visibility: hidden;
+    z-index: 1000;
+  }
+
+  &:hover ~ &-find-icon{
+    visibility: visible;
+  }
+}

@@ -132,6 +132,14 @@
   --contentBlockRadius: 32px;
   --contentBlockPadding: 64px;
   --contentBlockBoxShadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0 ,0.19);
+
+  // AVATAR
+
+  --avatarSizeBg: 130px;
+  --avatarSizeMd: 90px;
+  --avatarSizeSm: 50px;
+  --avatarBorderRadius: 50%;
+  --avatarHoverOpacity: 30%;
 }
 
 .mr {
