@@ -2,11 +2,12 @@
   display: flex;
   position: relative;
 
-  &:hover .avatar {
+
+  &-input-hover:hover .avatar{
     opacity: var(--avatarHoverOpacity);
   }
 
-  &:hover .avatar-find-icon{
+  &-input-hover:hover .avatar-find-icon{
     visibility: visible;
     z-index: 1000;
   }
@@ -18,10 +19,6 @@
 
   object-fit: cover;
   border-radius: var(--avatarBorderRadius);
-
-  &-input-hover:hover {
-    //opacity: var(--avatarHoverOpacity);
-  }
 
   &-input {
     display: none;
