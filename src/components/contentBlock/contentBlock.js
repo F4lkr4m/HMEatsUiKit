@@ -2,10 +2,15 @@ import styles from './contentBlock.scss'
 import contentBlockTemplate from './contentBlock.hbs'
 
 export class ContentBlock {
-  constructor(props) {
+  constructor({
+    content = []
+              }) {
+    this.content = content;
   }
 
   render() {
-    return contentBlockTemplate();
+    return contentBlockTemplate({
+      content: this.content,
+    });
   }
 }

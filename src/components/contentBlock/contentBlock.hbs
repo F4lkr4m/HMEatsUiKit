@@ -1,35 +1,5 @@
 <div class="content-block">
-    <div class="font_h1">
-        Хочешь заказать еду?<br>
-        Присоединяйся!
-
-    </div>
-
-    <label class="input-label">
-        <div class="input-label__text">Имя</div>
-        <input placeholder="Имя" class="input input_border">
-    </label>
-
-    <label class="input-label">
-        <div class="input-label__text">Email</div>
-        <input placeholder="Email" class="input input_border">
-    </label>
-
-    <label class="input-label">
-        <div class="input-label__text">Номер телефона</div>
-        <input placeholder="Номер телефона" class="input input_border">
-    </label>
-
-    <label class="input-label">
-        <div class="input-label__text">Пароль</div>
-        <input placeholder="Пароль" type="password"  class="input input_border">
-    </label>
-
-    <label class="input-label">
-        <div class="input-label__text">Повторение пароля</div>
-        <input placeholder="Повторение пароля" type="password" class="input input_border">
-    </label>
-
-    <div class="button button_color_green button_text_center">Зарегистрироваться!</div>
-
+    {{#each content}}
+        {{{this}}}
+    {{/each}}
 </div>
