@@ -11,12 +11,8 @@ export class List {
   }
 
   render() {
-    const content = this.objList.reduce((prev, item) => {
-      prev += item.render();
-      return prev;
-    }, '');
     return listTemplate({
-        content: content,
+        content: this.objList,
         listTitle: this.listTitle,
     });
   }

@@ -19,7 +19,7 @@ export const RestaurantList = (args) => {
   });
   const objList = [];
   for(let i = 0; i < args.number; i++) {
-    objList.push(block);
+    objList.push(block.render());
   }
   args.objList = objList;
   const list = new List(args);
@@ -42,7 +42,7 @@ export const DishesList = (args) => {
   });
   const objList = [];
   for(let i = 0; i < args.number; i++) {
-    objList.push(block);
+    objList.push(block.render());
   }
   args.objList = objList;
   const list = new List(args);

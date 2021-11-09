@@ -1,4 +1,6 @@
 <div class="list">
     <div class="list-title font_h1">{{listTitle}}</div>
-    {{{content}}}
+    {{#each content}}
+        {{{this}}}
+    {{/each}}
 </div>
