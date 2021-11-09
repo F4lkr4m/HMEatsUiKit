@@ -1,3 +1,8 @@
+.avatar-box {
+  display: flex;
+  position: relative;
+}
+
 .avatar {
   width: var(--avatarSizeMd);
   height: var(--avatarSizeMd);
@@ -19,8 +24,8 @@
   }
 
   &_bg ~ &-find-icon {
-    left: calc(var(--avatarSizeBg) / 2);
-    top: calc(var(--avatarSizeBg) / 2);
+    left: calc(var(--avatarSizeBg) / 2 - 12px);
+    top: calc(var(--avatarSizeBg) / 2 - 12px);
   }
 
   &_md {
@@ -29,8 +34,8 @@
   }
 
   &_md ~ &-find-icon {
-    left: calc(var(--avatarSizeMd) / 2);
-    top: calc(var(--avatarSizeMd) / 2);
+    left: calc(var(--avatarSizeMd) / 2 - 12px);
+    top: calc(var(--avatarSizeMd) / 2 - 12px);
   }
 
   &_sm {
@@ -39,8 +44,8 @@
   }
 
   &_sm ~ &-find-icon {
-    left: calc(var(--avatarSizeSm) / 2);
-    top: calc(var(--avatarSizeSm) / 2);
+    left: calc(var(--avatarSizeSm) / 2 - 12px);
+    top: calc(var(--avatarSizeSm) / 2 - 12px);
   }
 
   &-find-icon {
