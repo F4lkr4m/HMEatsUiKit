@@ -21,6 +21,10 @@
     border-color: var(--inputBorderColor);
   }
 
+  &_without-border {
+    border: 0;
+  }
+
   &_radius-border_high {
     border-radius: var(--inputBorderRadiusHigh);
   }
@@ -40,6 +44,27 @@
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+
+    &_border {
+      flex-direction: row;
+      display: flex;
+      align-items: center;
+      border: var(--inputBorder);
+      border-color: var(--inputBorderColor);
+      margin-bottom: 20px;
+    }
+
+    &_border_shape_rounded {
+      border-radius: var(--inputBorderRadiusHigh);
+    }
+
+    &_color_gray {
+      background-color: var(--color-light-gray);
+    }
+
+    &_border .input {
+      margin-bottom: 0;
+    }
 
     &__text {
       font-size: var(--inputLabelTextFontSize);
