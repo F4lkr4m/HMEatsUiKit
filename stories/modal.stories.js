@@ -3,6 +3,7 @@ import {DishModal} from "../src/components/modal/dishModal/dishModal";
 import {ContinueModal} from "../src/components/modal/continueModal/continueModal";
 import {Input} from "../src/forms/input/input";
 import {Button} from "../src/components/button/button";
+import {Card} from "../src/components/card/card";
 
 export default {
   title: "Components/Modal",
@@ -100,4 +101,14 @@ export const continueModal = (args) => {
 continueModal.args = {
   oldRestaurantName: 'KFC',
   newRestaurantName: 'Mac',
+}
+
+export const cardModal = (args) => {
+  const block = new Modal(args);
+  return block.render();
+}
+
+cardModal.args = {
+  title: 'Онлайн оплата',
+  centerContent: [new Card({sumCost: 100}).render()],
 }

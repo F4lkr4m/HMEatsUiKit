@@ -20,11 +20,13 @@
                     {{{this}}}
                 {{/each}}
             </div>
-            <div class="modal-bottom-block">
-                {{#each bottomContent}}
-                    {{{this}}}
-                {{/each}}
-            </div>
+            {{#if bottomContent}}
+                <div class="modal-bottom-block">
+                    {{#each bottomContent}}
+                        {{{this}}}
+                    {{/each}}
+                </div>
+            {{/if}}
         </div>
     </div>
 </div>
