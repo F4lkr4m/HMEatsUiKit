@@ -31,7 +31,7 @@ export class DishModal {
       });
     });
     const cg = new CheckboxGroup({
-      groupTitle: 'Хотите добавить ингредиенты?',
+      groupTitle: checkboxes !== [] ? 'Хотите добавить ингредиенты?' : '',
       checkboxes: checkboxes,
     }).render();
 
