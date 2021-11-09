@@ -14,8 +14,9 @@ export class DishModal {
     this.img = img;
     this.name = name;
     this.desc = desc;
-    this.ingredients = ingredients;
-    this.radios = radios;
+
+    this.ingredients = ingredients ? ingredients : [];
+    this.radios = radios ? radios : [];
     this.number = 1;
   }
 
@@ -33,6 +34,7 @@ export class DishModal {
       groupTitle: 'Хотите добавить ингредиенты?',
       checkboxes: checkboxes,
     }).render();
+
 
     const radios = this.radios.reduce((prev, item) => {
       const rg = new RadioGroup({
