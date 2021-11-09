@@ -65,6 +65,10 @@
     padding: calc(var(--modalOuterPadding) / 3) var(--modalOuterPadding) calc(var(--modalOuterPadding)) var(--modalOuterPadding);
   }
 
+  &-block {
+    padding: var(--modalOuterPadding);
+  }
+
   &__header {
     width: 100%;
     display: flex;
