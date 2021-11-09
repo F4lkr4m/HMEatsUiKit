@@ -96,4 +96,7 @@ export const continueModal = (args) => {
   return block.render();
 }
 
-continueModal.args = {}
+continueModal.args = {
+  oldRestaurantName: 'KFC',
+  newRestaurantName: 'Mac',
+}

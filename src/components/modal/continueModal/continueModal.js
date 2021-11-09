@@ -3,10 +3,18 @@ import continueModalTemplate from './continueModal.hbs'
 
 
 export class ContinueModal {
-  constructor(props) {
+  constructor({
+    newRestaurantName = '',
+    oldRestaurantName = '',
+              }) {
+    this.newRestaurantName = newRestaurantName;
+    this.oldRestaurantName = oldRestaurantName;
   }
 
   render() {
-    return continueModalTemplate();
+    return continueModalTemplate({
+      newRestaurantName: this.newRestaurantName,
+      oldRestaurantName: this.oldRestaurantName,
+    });
   }
 }
