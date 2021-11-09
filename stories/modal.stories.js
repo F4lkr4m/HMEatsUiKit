@@ -42,6 +42,7 @@ dishModal.args = {
   img: 'https://avatars.mds.yandex.net/i?id=8190d1c6f0a87d9dcc258676e69b5018-2431862-images-thumbs&n=13',
   name: 'Чизбургер',
   desc: 'Большое комбо. При изменении комплектации цена комбо может измениться.',
+  cost: 100,
   ingredients: [
     {
       id: 276,

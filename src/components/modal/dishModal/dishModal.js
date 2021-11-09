@@ -8,13 +8,14 @@ export class DishModal {
     img = '',
     name = '',
     desc = '',
+    cost = 0,
     ingredients = [],
     radios = [],
               }) {
     this.img = img;
     this.name = name;
     this.desc = desc;
-
+    this.cost = cost;
     this.ingredients = ingredients ? ingredients : [];
     this.radios = radios ? radios : [];
     this.number = 1;
@@ -51,6 +52,7 @@ export class DishModal {
       img: this.img,
       name: this.name,
       desc: this.desc,
+      cost: this.cost,
       checkboxGroup: cg,
       radiosGroup: radios,
     });
