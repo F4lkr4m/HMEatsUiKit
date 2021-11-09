@@ -22,6 +22,8 @@ input.args = {
   placeholder: 'Имя любимое мое - твое именно',
   border: false,
   borderRadius: '',
+  type: 'password',
+  classes: ['kekew'],
 }
 
 export const allInputs = (args) => AllInputs(args);

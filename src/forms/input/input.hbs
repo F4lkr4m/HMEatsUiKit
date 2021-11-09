@@ -3,6 +3,7 @@
         {{label}}
     </div>
     <input placeholder="{{placeholder}}"
+           type="{{#if type}}{{type}}{{else}}text{{/if}}"
            class="input
                 {{#if border}}
                     input_border
@@ -10,5 +11,8 @@
                         input_radius-border_{{borderRadius}}
                     {{/if}}
                 {{/if}}
+                {{#each classes}}
+                    {{this}}
+                {{/each}}
            ">
 </label>

@@ -8,10 +8,14 @@ export class Input {
                 placeholder,
                 border = false,
                 borderRadius = '',
+                type = 'text',
+                classes = [],
               }) {
     this.border = border;
+    this.type = type;
     this.placeholder = placeholder;
     this.label = label;
+    this.classes = classes;
     if (borderRadius !== '') {
       this.borderRadius = borderRadius;
     }
@@ -23,6 +27,8 @@ export class Input {
       label: this.label,
       borderRadius: this.borderRadius,
       placeholder: this.placeholder,
+      type: this.type,
+      classes: this.classes,
     });
   };
 }

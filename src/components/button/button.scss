@@ -124,6 +124,11 @@
     margin: auto;
   }
 
+  &_wide {
+    width: 100%;
+    justify-content: center;
+  }
+
   //@media (min-width: 0px) and (max-width: 860px) {
   //  & {
   //    font-size: 0;

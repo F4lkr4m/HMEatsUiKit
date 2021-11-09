@@ -9,11 +9,13 @@ export class Button {
                 rounded = false,
                 size = "md",
                 icon = '',
+                classes = [],
               }) {
     this.size = size;
     this.rounded = rounded;
     this.color = color;
     this.label = label;
+    this.classes = classes;
     if (icon !== '') {
       this.icon = icon;
     }
@@ -26,6 +28,7 @@ export class Button {
       rounded: this.rounded,
       label: this.label,
       icon: this.icon,
+      classes: this.classes,
     });
   };
 }
@@ -34,15 +37,18 @@ export class ButtonIcon {
   constructor({
                 iconButtonColor = "gray",
                 icon = '',
+                classes = [],
               }) {
     this.color = iconButtonColor;
     this.icon = icon;
+    this.classes = classes;
   }
 
   render() {
     return buttonIcon({
       color: this.color,
       icon: this.icon,
+      classes: this.classes,
     })
   }
 }

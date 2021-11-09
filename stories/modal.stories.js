@@ -1,6 +1,8 @@
 import {Modal} from "../src/components/modal/modal";
 import {DishModal} from "../src/components/modal/dishModal/dishModal";
 import {ContinueModal} from "../src/components/modal/continueModal/continueModal";
+import {Input} from "../src/forms/input/input";
+import {Button} from "../src/components/button/button";
 
 export default {
   title: "Components/Modal",
@@ -14,6 +16,21 @@ export const Default = (args) => {
 
 
 Default.args = {
+  title: 'Заголовок',
+  topContent: ['<div class="font_h2">Какой то контент</div>'],
+  centerContent: [new Input({
+    label: 'Поле ввода',
+    placeholder: 'Поле ввода',
+    border: false,
+    type: 'text',
+  }).render()],
+  bottomContent: [new Button({
+    label: 'Кнопочка',
+    color: 'green',
+    size: 'md',
+    icon: '',
+    classes: ['button_wide']
+  }).render()]
 }
 
 export const dishModal = (args) => {

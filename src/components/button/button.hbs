@@ -1,4 +1,5 @@
 <button class="button
+    {{#each classes}}{{this}}{{/each}}
     {{#if rounded}} button_shape_rounded {{/if}}
     {{#if size}}button__{{size}}{{/if}}
     {{#if color}}button_color_{{color}}{{/if}}">

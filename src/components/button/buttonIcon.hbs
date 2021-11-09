@@ -1,4 +1,5 @@
 <button class="button-icon
+    {{#each classes}}{{this}}{{/each}}
     {{#if color}}button-icon_color_{{color}}{{/if}}">
             {{{icon}}}
 </button>
