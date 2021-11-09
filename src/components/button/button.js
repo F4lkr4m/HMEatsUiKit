@@ -1,6 +1,7 @@
 import './button.scss'
 import button from './button.hbs'
 import buttonIcon from './buttonIcon.hbs'
+import buttonIconV from './buttonIconV.hbs'
 
 export class Button {
   constructor({
@@ -50,5 +51,25 @@ export class ButtonIcon {
       icon: this.icon,
       classes: this.classes,
     })
+  }
+}
+
+export class ButtonIconV {
+  constructor({
+                label = '',
+                icon = '',
+                classes = [],
+              }) {
+    this.label = label;
+    this.icon = icon;
+    this.classes = classes;
+  }
+
+  render() {
+    return buttonIconV({
+      label: this.label,
+      icon: this.icon,
+      classes: this.classes,
+    });
   }
 }
