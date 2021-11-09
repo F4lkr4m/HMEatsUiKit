@@ -1,0 +1,19 @@
+<div class="footer">
+    <div class="footer__upper-footer">
+        <a href="/" class="footer__image">
+            <img src="https://img.hmeats.fra1.cdn.digitaloceanspaces.com/logoWhite1.svg" height="120" alt="">
+        </a>
+        <div class="footer__navigation">
+            <div class="footer__navigation">
+                <a href="/" class="footer__help font-paragraph">Главная</a>
+                {{#each nav}}
+                    <a href="{{href}}" class="footer__help font-paragraph">{{title}}</a>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+    <hr class="footer__line">
+    <div class="footer__lower-footer">
+        <div class="font_h3">© 2021 HOT TECHNOLOGIES INC.</div>
+    </div>
+</div>
