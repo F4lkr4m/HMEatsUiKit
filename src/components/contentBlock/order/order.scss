@@ -8,13 +8,6 @@
 }
 
 .order {
-  background-color: var(--color-white);
-  border-radius: 32px;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0 ,0.19);
-
   &__main-info {
     padding-bottom: 20px;
     display: flex;
@@ -68,7 +61,7 @@
   }
 
   &__item {
-    align-items: center;
+    align-items: flex-start;
     display: flex;
     flex-direction: row;
     padding: 10px 0 10px;
