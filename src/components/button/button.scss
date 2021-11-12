@@ -20,6 +20,8 @@
   box-sizing: border-box;
   color: black;
 
+  text-decoration: none;
+
   &:hover {
     background-color: var(--color-primary-hover);
   }
@@ -129,11 +131,10 @@
     justify-content: center;
   }
 
-  //@media (min-width: 0px) and (max-width: 860px) {
-  //  & {
-  //    font-size: 0;
-  //  }
-  //}
+
+  @media (min-width: 0px) and (max-width: 860px) {
+
+  }
 }
 
 .button-icon {
