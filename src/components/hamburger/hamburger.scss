@@ -90,6 +90,12 @@
     font-size: var(--navbarProfileProfileLinkFontSize);
     text-decoration: none;
   }
+
+  @media (min-width: 0px) and (max-width: 300px) {
+    & {
+      width: 100%;
+    }
+  }
 }
 
 @keyframes animateleft {
