@@ -1,0 +1,78 @@
+<div class="content-block">
+    <div class="order__main-info">
+        <div class="order__main-info-text">
+            <div class="font_h1">
+                {{name}}
+            </div>
+            {{#if historyOrder}}
+                <div class="font-paragraph order__row-margin">
+                    {{date}}
+                </div>
+                <div class="font-paragraph font_color_gray order__row-margin">
+                    {{addrs}}
+                </div>
+                {{#if status}}
+                    <div class="order__status order__row-margin order__status_done">
+                        Выполнен
+                    </div>
+                {{else}}
+                    <div class="order__status order__row-margin order__status_cancel">
+                        Отменен
+                    </div>
+                {{/if}}
+            {{/if}}
+        </div>
+        <div class="order__image-wrapper">
+            <img class="order__main-info-img" src="{{img}}" alt="rest image">
+        </div>
+    </div>
+    <div class="order__info">
+        {{#each items}}
+            <div class="order__item">
+                <div class="order__item-wrapper">
+                    <div class="font_h3">
+                        {{ name }}
+                    </div>
+                    {{#each radios}}
+                        <div class="font-label font_color_gray">
+                            • {{ name }}
+                        </div>
+
+                    {{/each}}
+                    {{#each ingredients}}
+                        <div class="font-label font_color_gray">
+                            + {{ name }}
+                        </div>
+                    {{/each}}
+                </div>
+
+
+                <div class="font-paragraph font_color_gray ml_auto">
+                    {{ count }} шт
+                </div>
+
+                <div class="font-paragraph order__item-cost">
+                    {{ cost }} ₽
+                </div>
+            </div>
+        {{/each}}
+        <div class="order__item">
+            <div class="font-paragraph font_color_gray">
+                Доставка
+            </div>
+
+            <div class="font-paragraph font_color_gray ml_auto">
+                {{dCost}} ₽
+            </div>
+        </div>
+        <div class="order__summary">
+            <div class="font_h2">
+                Итого
+            </div>
+
+            <div class="font_h2 ml_auto">
+                {{ sumCost }} ₽
+            </div>
+        </div>
+    </div>
+</div>
