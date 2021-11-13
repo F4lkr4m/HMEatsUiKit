@@ -1,3 +1,7 @@
+.nav-button path {
+  fill: var(--fontColor);
+}
+
 .navbar {
   width: 100%;
   height: var(--navbarHeight);
@@ -6,10 +10,6 @@
   align-items: center;
 
   background-color: var(--contentBlockBackgroundColor);
-
-  & path {
-    fill: var(--contentBlockColor);
-  }
 
   &__button {
     margin-right: 10px;

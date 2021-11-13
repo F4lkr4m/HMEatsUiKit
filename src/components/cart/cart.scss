@@ -24,6 +24,8 @@
 }
 
 .cart {
+    color: black;
+
     &-wrapper {
         height: var(--cartWrapperHeight);
         min-width: var(--cartMinWidth);

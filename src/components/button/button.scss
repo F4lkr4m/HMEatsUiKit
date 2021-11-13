@@ -30,6 +30,10 @@
     background-color: var(--color-primary-active);
   }
 
+  & path {
+    fill: black;
+  }
+
   &_text_center {
     justify-content: center;
   }
@@ -38,6 +42,10 @@
     border: 0;
     background-color: var(--color-black);
     color: white;
+  }
+
+  &_color_black path{
+    fill: white;
   }
 
   &_color_black path {
