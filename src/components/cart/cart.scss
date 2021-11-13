@@ -100,7 +100,8 @@
     &__summary-title {
         font-size: var(--cartSummaryTitleFontSize);
         font-weight: var(--font_thin);
-        color: var(--color-gray);
+        //color: var(--color-gray);
+        color: black;
     }
 
     &__summary-val-cost {
@@ -155,7 +156,8 @@
     &__order-row-additional {
         margin-top: 5px;
         width: 100%;
-        color: var(--color-gray);
+        //color: var(--color-gray);
+        color: black;
     }
 
     &__order-row-right-box {

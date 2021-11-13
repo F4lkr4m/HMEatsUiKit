@@ -126,7 +126,7 @@
   }
 
   &__list {
-    background-color: white;
+    background-color: var(--homeBackgroundColor);
     display: flex;
     flex-direction: row;
     padding-top: 10px;
