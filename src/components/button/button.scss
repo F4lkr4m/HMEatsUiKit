@@ -95,6 +95,7 @@
   }
 
   &__icon_left {
+    max-width: var(--buttonIconVMaxWidth);
     display: flex;
     justify-content: center;
     align-items: center;
