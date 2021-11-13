@@ -7,6 +7,11 @@
   --orderSummaryFontSize: 24px;
 }
 
+.order_nd {
+  text-decoration: none;
+  color: var(--fontColor);
+}
+
 .order {
   &__main-info {
     padding-bottom: 20px;
