@@ -17,6 +17,12 @@
     --cartBorderRadius: 2px;
 }
 
+.dish-popup__num-selector-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .cart {
     &-wrapper {
         height: var(--cartWrapperHeight);
