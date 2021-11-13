@@ -9,6 +9,9 @@ export class RadioGroup {
                 id = 1,
               }) {
     this.radios = radios;
+    if (this.radios.length > 0) {
+      this.radios[0].checked = true;
+    }
     this.radioName = radioName;
     this.groupTitle = groupTitle;
     this.id = id;
