@@ -13,7 +13,7 @@ navbar.args = {
   buttons: [
     new Button({
       label: 'Зарегистрироваться',
-      color: "black",
+      color: "green",
       rounded: true,
       size: "md",
       classes: ['navbar__hide'],

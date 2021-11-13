@@ -160,6 +160,24 @@
 
   --cardRadius: 8px;
   --cardOuterPadding: 16px;
+
+  // NAVBAR
+
+  --hamburgerWidth: 300px;
+  --hamburgerPadding: 20px;
+  --hamburgerButtonsVertMargin: 5px;
+  --hamburgerProfileImgSize: 50px;
+  --hamburgerProfileTextBoxPaddingLeft: 10px; // padding between image and text
+
+  --navbarHeight: 96px;
+  --logoMarginLeft: 30px;
+  --navbarButtonSpacer: 30px; // margin between buttons and inputs in navbar
+
+  --navbarProfileTextBoxFontSize: 18px;
+  --navbarProfileProfileLinkFontSize: 13px;
+
+  --navbarSearchInputMinWidth: 100px;
+  --navbarSearchInputMaxWidth: 442px;
 }
 
 .mr {

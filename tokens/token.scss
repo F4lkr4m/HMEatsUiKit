@@ -27,8 +27,8 @@
   --color-primary-hover: #d7d7d7;
   --color-primary-active: #bdbdbd;
   --color-green: #3E9920;
-  --color-green-hover: #327e1a;
-  --color-green-active: #2c6b0d;
+  --color-green-hover: #389818;
+  --color-green-active: #308814;
   --color-black: rgba(0, 0, 0);
   --color-black-hover: rgba(50, 50, 50);
   --color-black-active: rgba(30, 30, 30);
@@ -121,7 +121,8 @@
   --modalWidth: 700px;
   --modalRadius: 32px;
   --modalHeaderMarginBottom: 8px;
-  --modalBackgroundColor: black;
+  --modalBackgroundColor: white;
+  --modalColor: black;
 
   // DISH MODAL
 
@@ -133,6 +134,8 @@
   --contentBlockRadius: 32px;
   --contentBlockPadding: 64px;
   --contentBlockBoxShadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0 ,0.19);
+  --contentBlockBackgroundColor: var(--modalBackgroundColor);
+  --contentBlockColor: black;
 
   // AVATAR
 
@@ -153,6 +156,23 @@
 
   --cardRadius: 32px;
   --cardOuterPadding: 32px;
+
+  // NAVBAR
+  --hamburgerWidth: 300px;
+  --hamburgerPadding: 20px;
+  --hamburgerButtonsVertMargin: 5px;
+  --hamburgerProfileImgSize: 50px;
+  --hamburgerProfileTextBoxPaddingLeft: 10px; // padding between image and text
+
+  --navbarHeight: 96px;
+  --logoMarginLeft: 30px;
+  --navbarButtonSpacer: 30px; // margin between buttons and inputs in navbar
+
+  --navbarProfileTextBoxFontSize: 18px;
+  --navbarProfileProfileLinkFontSize: 13px;
+
+  --navbarSearchInputMinWidth: 100px;
+  --navbarSearchInputMaxWidth: 442px;
 }
 
 .mr {
