@@ -56,7 +56,7 @@
 
   &_color_green {
     border: 0;
-    background-color: var(--color-green);
+    background-color: var(--color-secondary);
     color: white;
   }
 
@@ -65,11 +65,11 @@
   }
 
   &_color_green:hover {
-    background-color: var(--color-green-hover);
+    background-color: var(--color-secondary-hover);
   }
 
   &_color_green:active {
-    background-color: var(--color-green-active);
+    background-color: var(--color-secondary-active);
   }
 
   &_color_white {
@@ -155,6 +155,7 @@
 
   &_color_gray {
     border: solid 1px rgba(0, 0, 0, 0.12);
+    background-color: var(--color-white);
   }
 
   &_color_gray:hover {

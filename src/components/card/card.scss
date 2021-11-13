@@ -1,32 +1,31 @@
-:root {
-  --confirmPopupBorderRadius: 32px;
-  --confirmPopupOuterPadding: 32px;
-}
-
 .card {
   margin: 0 auto 0 auto;
   width: 424px;
   height: 248px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 32px;
+  border: 1px solid var(--contentBlockColor);
+  border-radius: var(--cardRadius);
   box-sizing: border-box;
   padding: 20px;
   display: flex;
   flex-direction: column;
 
+  color: var(--contentBlockColor);
+  background-color: var(--contentBlockBackgroundColor);
+
   &__body {
     display: flex;
+    align-items: center;
     flex-direction: column;
     overflow: auto;
-    padding: 0 var(--confirmPopupOuterPadding) var(--confirmPopupOuterPadding) var(--confirmPopupOuterPadding);
+    padding: 0 var(--cardOuterPadding) var(--cardOuterPadding) var(--cardOuterPadding);
   }
 
   &__card-wrapper {
-    padding: var(--confirmPopupOuterPadding);
+    padding: var(--cardOuterPadding);
     box-sizing: border-box;
     margin: 15px 0  15px 0;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 32px;
+    border: 1px solid var(--contentBlockColor);
+    border-radius: var(--cardRadius);
     flex-direction: column;
     display: flex;
     width: 490px;
@@ -71,7 +70,8 @@
   }
 
   &__cvv-note {
-    color: rgba(0,0,0,.4);
+    //color: rgba(0,0,0,.4);
+    color: var(--contentBlockColor);
     font-size: 14px;
     margin-left: auto;
     display: flex;
