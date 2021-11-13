@@ -1,7 +1,7 @@
 :root {
   // FONTS
 
-  --raleway-font: Raleway, sans-serif;
+  --raleway-font: "JetBrains Mono Thin", sans-serif;
 
   --font_bold: 800;
   --font_medium: 600;
@@ -22,18 +22,19 @@
 
 
   // COLORS
-
-  --color-primary: #F6F6F6;
-  --color-primary-hover: #d7d7d7;
-  --color-primary-active: #bdbdbd;
-  --color-green: #3E9920;
+  //247BA0
+  //020887
+  --color-primary: #ffffff;
+  --color-primary-hover: #d5d2d2;
+  --color-primary-active: #9ea2a2;
+  --color-green: #1ed960;
   --color-green-hover: #327e1a;
   --color-green-active: #2c6b0d;
-  --color-black: rgba(0, 0, 0);
+  --color-black: #000000;
   --color-black-hover: rgba(50, 50, 50);
   --color-black-active: rgba(30, 30, 30);
-  --color-white: #FFFFFF;
-  --color-gray: #afafaf;
+  --color-white: #ffffff;
+  --color-gray: #ffffff;
   --color-gray-hover: #AFACA7;
   --color-gray-active: #AFA99F;
   --color-light-gray: #eeeeee;
@@ -55,8 +56,8 @@
   --buttonIconVPaddingHor: 10px; // x paddings inside vertical icon button
 
   --buttonBorderRadius: 2px; // std radius
-  --buttonBorderRadiusMedium: 10px; // medium radius
-  --buttonBorderRadiusHigh: 16px; // high radius
+  --buttonBorderRadiusMedium: 4px; // medium radius
+  --buttonBorderRadiusHigh: 8px; // high radius
 
   --buttonIconMarginInside: 10px; // margin between text and icon in button
 
@@ -93,10 +94,10 @@
 
   // DISH BLOCK
 
-  --dishHeight: 160px;
-  --dishBorderRadius: 16px;
-  --dishTextBoxPadding: 16px;
-  --dishHoverBorderColor: black;
+  --dishHeight: 200px;
+  --dishBorderRadius: 4px;
+  --dishTextBoxPadding: 20px;
+  --dishHoverBorderColor: green;
   --dishBorder: 1px solid #e2e2e2;
   --dishMargin: 10px 10px 10px 0;
 
@@ -105,54 +106,60 @@
 
   --restaurant-block_width_primary: 315px;
   --restaurant-block_height_primary: 188px;
+  --restaurantRatingBackgroundColor: white;
+  --restaurantRatingColor: black;
 
   --restaurant-block__img-widht: 315px;
-  --restaurant-block__img-height: 125px;
-  --restaurantBlockBorder: solid 1px #e2e2e2;
-  --restaurantBlockRadius: 16px;
+  --restaurant-block__img-height: 150px;
+  --restaurantBlockBorder: solid 1px #white;
+  --restaurantBlockRadius: 4px;
   --restaurantBlockMargin: 10px 10px 10px 0; // margin around
   --restaurantBlockMarginHover: 8px 10px 12px 0;
-  --restaurantBlockInfoPadding: 16px;
+  --restaurantBlockInfoPadding: 20px;
 
   // MODAL
 
-  --modalOuterPadding: 64px;
+  --modalOuterPadding: 32px;
 
   --modalWidth: 700px;
-  --modalRadius: 32px;
+  --modalRadius: 10px;
   --modalHeaderMarginBottom: 8px;
-  --modalBackgroundColor: black;
+  --modalBackgroundColor: #181818;
+  --modalColor: white;
 
   // DISH MODAL
 
-  --modalDishImageHeight: 250px;
-  --modalDishImageMargin: 12px;
+  --modalDishImageHeight: 300px;
+  --modalDishImageMargin: 20px;
 
   // CONTENT BLOCK
 
-  --contentBlockRadius: 32px;
-  --contentBlockPadding: 64px;
+  --contentBlockRadius: var(--modalRadius);
+  --contentBlockPadding: var(--modalOuterPadding);
   --contentBlockBoxShadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0 ,0.19);
+  --contentBlockBackgroundColor: var(--modalBackgroundColor);
+  --contentBlockColor: white;
 
   // AVATAR
 
   --avatarSizeBg: 128px;
   --avatarSizeMd: 96px;
   --avatarSizeSm: 48px;
-  --avatarBorderRadius: 50%;
+  --avatarBorderRadius: 20%;
   --avatarHoverOpacity: 30%;
 
   // SCROLLBAR
 
-  --scrollbarWidth: 8px;
-  --scrollbarBorderRadius: 20px;
+  --scrollbarWidth: 12px;
+  --scrollbarBorderRadius: 0px;
   --scrollbarBoxShadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
-  --scrollbarBackgroundColor: var(--color-gray);
+  --scrollbarBackgroundColor: #181818;
+  --scrollbarCurColor: #b3b3b3;
 
   // CARD
 
-  --cardRadius: 32px;
-  --cardOuterPadding: 32px;
+  --cardRadius: 8px;
+  --cardOuterPadding: 16px;
 }
 
 .mr {

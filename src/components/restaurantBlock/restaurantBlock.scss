@@ -1,12 +1,14 @@
 .restaurant-block {
   text-decoration: none;
-  color: inherit;
   display: flex;
   width: 100%;
   flex-direction: column;
   border: var(--restaurantBlockBorder);
   border-radius: var(--restaurantBlockRadius);
   margin: var(--restaurantBlockMargin);
+
+  color: var(--contentBlockColor);
+  background-color: var(--contentBlockBackgroundColor);
 
   &:hover {
     margin: var(--restaurantBlockMarginHover);
@@ -15,8 +17,8 @@
 
   &__img {
     position: relative;
-    border-top-right-radius: 16px;
-    border-top-left-radius: 16px;
+    border-top-right-radius: var(--restaurantBlockRadius);
+    border-top-left-radius: var(--restaurantBlockRadius);
     width: 100%;
     height: var(--restaurant-block__img-height);
     object-fit: cover;
@@ -47,7 +49,8 @@
   &__rating {
     width: 26px;
     height: 26px;
-    background: #EEEEEE;
+    background: var(--restaurantRatingBackgroundColor);
+    color: var(--restaurantRatingColor);
     border-radius: 13px;
     margin-right: 5px;
 

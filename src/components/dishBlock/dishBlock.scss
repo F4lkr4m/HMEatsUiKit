@@ -3,6 +3,9 @@
   flex-direction: row;
   height: var(--dishHeight);
 
+  color: var(--contentBlockColor);
+  background-color: var(--contentBlockBackgroundColor);
+
   border-radius: var(--dishBorderRadius);
 
   border: var(--dishBorder);
