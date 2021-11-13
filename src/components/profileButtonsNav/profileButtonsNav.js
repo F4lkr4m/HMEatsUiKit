@@ -1,18 +1,6 @@
 import styles from './profileButtonsNav.scss'
-import profileButtonsNav from './profileButtonsNav.hbs'
-
-/**
- * props = {
- *   buttons: [
- *     button html
- *   ]
- *   logo: url img
- * }
- * @param props
- * @return {*}
- * @constructor
- */
+import profileButtonsNavTemplate from './profileButtonsNav.hbs'
 
 export const ProfileButtonsNav = (props) => {
-    return profileButtonsNav(props);
+    return profileButtonsNavTemplate(props);
 }
