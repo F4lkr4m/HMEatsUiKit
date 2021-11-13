@@ -10,6 +10,8 @@
   justify-content: flex-start;
   height: var(--sortUnderheaderHeight);
 
+  color: var(--fontColor);
+
   margin-bottom: var(--sortUnderheaderMarginBottom);
 
   &__button:hover .button-icon-v__icon {
