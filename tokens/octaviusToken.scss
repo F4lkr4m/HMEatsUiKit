@@ -209,12 +209,12 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background-color: var(--color-light-gray);
+  background-color: var(--scrollbarBackgroundColor);
   border-radius: var(--scrollbarBorderRadius);
 }
 
 body::-webkit-scrollbar-thumb {
   border-radius: var(--scrollbarBorderRadius);
-  background-color: var(--color-gray);
+  background-color: var(--scrollbarCurColor);
   box-shadow: var(--scrollbarBoxShadow);
 }
