@@ -1,0 +1,7 @@
+<div class="{{#if row}}button-group__row{{else}} button-group__column{{/if}}">
+    {{#each buttons}}
+        <div class="{{#if ../row}}button-group__row-margin{{else}}button-group__column-margin{{/if}}">
+            {{{this}}}
+        </div>
+    {{/each}}
+</div>

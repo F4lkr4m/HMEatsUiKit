@@ -4,6 +4,7 @@ import {ContinueModal} from "../src/components/modal/continueModal/continueModal
 import {Input} from "../src/forms/input/input";
 import {Button} from "../src/components/button/button";
 import {Card} from "../src/components/card/card";
+import {ButtonGroup} from "../src/components/buttonGroup/buttonGroup";
 
 export default {
   title: "Components/Modal",
@@ -112,3 +113,31 @@ cardModal.args = {
   title: 'Онлайн оплата',
   centerContent: [new Card({sumCost: 100}).render()],
 }
+
+export const changeModal = (args) => {
+  const block = new Modal(args);
+  return block.render();
+}
+
+changeModal.args = {
+  title: 'Поменять название раздела?',
+  centerContent: [new Input({
+    label: '',
+    placeholder: 'Новое название раздела',
+    border: true,
+    borderRadius: 'high'
+  }).render()],
+  bottomContent: [
+    ButtonGroup({
+      row: true,
+      buttons: [new Button({
+        label: 'Отмена',
+        color: 'green',
+      }).render(),
+        new Button({
+          label: 'Принять'
+        }).render(),]
+    })
+  ]
+}
+

@@ -1,5 +1,16 @@
 <div class="list">
-    <div id="{{listTitle}}" class="list-title font_h1">{{listTitle}}</div>
+    <div id="{{listTitle}}" class="list-title">
+        <div class="font_h1">
+            {{listTitle}}
+        </div>
+        <div class="list__button-wrapper">
+            {{#each buttons}}
+                <div class="list__button mr">
+                    {{{this}}}
+                </div>
+            {{/each}}
+        </div>
+    </div>
     {{#each content}}
         {{{this}}}
     {{/each}}
