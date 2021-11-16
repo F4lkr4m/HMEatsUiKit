@@ -1,0 +1,28 @@
+.review {
+  box-sizing: border-box;
+  padding: var(--contentBlockPadding);
+  border-radius: var(--contentBlockRadius);
+  background-color: var(--profileBackgroundColor);
+  color: var(--fontColor);
+  display: flex;
+  justify-content: flex-start;
+
+  &__star-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__text {
+    margin-left: 20px;
+  }
+
+  &__rating {
+    font-size: 35px;
+    margin-right: 5px;
+  }
+
+  &__info {
+    margin-top: 10px;
+  }
+}
