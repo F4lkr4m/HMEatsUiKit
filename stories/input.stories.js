@@ -30,3 +30,15 @@ export const allInputs = (args) => AllInputs(args);
 
 allInputs.args = {}
 
+export const textField = (args) => {
+  const input = new Input(args);
+  return input.render();
+}
+
+textField.args = {
+  label: '',
+  placeholder: 'Имя любимое мое - твое именно',
+  border: true,
+  borderRadius: '',
+  type: 'text',
+}
