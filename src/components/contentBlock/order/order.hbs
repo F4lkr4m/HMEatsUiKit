@@ -1,78 +1,82 @@
 <div class="content-block">
-    <div class="order__main-info">
-        <div class="order__main-info-text">
-            <a href="/restaurants/{{id}}/" class="font_h1 order_nd">
-                {{name}}
-            </a>
-            {{#if historyOrder}}
-                <div class="font-paragraph order__row-margin">
-                    {{date}}
-                </div>
-                <div class="font-paragraph font_color_gray order__row-margin">
-                    {{addrs}}
-                </div>
-                {{#if status}}
-                    <div class="order__status order__row-margin order__status_done">
-                        Выполнен
+    {{#if items}}
+        <div class="order__main-info">
+            <div class="order__main-info-text">
+                <a href="/restaurants/{{id}}/" class="font_h1 order_nd">
+                    {{name}}
+                </a>
+                {{#if historyOrder}}
+                    <div class="font-paragraph order__row-margin">
+                        {{date}}
                     </div>
-                {{else}}
-                    <div class="order__status order__row-margin order__status_cancel">
-                        Отменен
+                    <div class="font-paragraph font_color_gray order__row-margin">
+                        {{addrs}}
                     </div>
+                    {{#if status}}
+                        <div class="order__status order__row-margin order__status_done">
+                            Выполнен
+                        </div>
+                    {{else}}
+                        <div class="order__status order__row-margin order__status_cancel">
+                            Отменен
+                        </div>
+                    {{/if}}
                 {{/if}}
-            {{/if}}
+            </div>
+            <div class="order__image-wrapper">
+                <img class="order__main-info-img" src="{{img}}" alt="rest image">
+            </div>
         </div>
-        <div class="order__image-wrapper">
-            <img class="order__main-info-img" src="{{img}}" alt="rest image">
-        </div>
-    </div>
-    <div class="order__info">
-        {{#each items}}
-            <div class="order__item">
-                <div class="order__item-wrapper">
-                    <div class="font_h3">
-                        {{ name }}
+        <div class="order__info">
+            {{#each items}}
+                <div class="order__item">
+                    <div class="order__item-wrapper">
+                        <div class="font_h3">
+                            {{ name }}
+                        </div>
+                        {{#each radios}}
+                            <div class="font-label font_color_gray">
+                                • {{ name }}
+                            </div>
+
+                        {{/each}}
+                        {{#each ingredients}}
+                            <div class="font-label font_color_gray">
+                                + {{ name }}
+                            </div>
+                        {{/each}}
                     </div>
-                    {{#each radios}}
-                        <div class="font-label font_color_gray">
-                            • {{ name }}
-                        </div>
 
-                    {{/each}}
-                    {{#each ingredients}}
-                        <div class="font-label font_color_gray">
-                            + {{ name }}
-                        </div>
-                    {{/each}}
+
+                    <div class="font-paragraph font_color_gray ml_auto">
+                        {{ count }} шт
+                    </div>
+
+                    <div class="font-paragraph order__item-cost">
+                        {{ cost }} ₽
+                    </div>
                 </div>
-
+            {{/each}}
+            <div class="order__item">
+                <div class="font-paragraph font_color_gray">
+                    Доставка
+                </div>
 
                 <div class="font-paragraph font_color_gray ml_auto">
-                    {{ count }} шт
-                </div>
-
-                <div class="font-paragraph order__item-cost">
-                    {{ cost }} ₽
+                    {{dCost}} ₽
                 </div>
             </div>
-        {{/each}}
-        <div class="order__item">
-            <div class="font-paragraph font_color_gray">
-                Доставка
-            </div>
+            <div class="order__summary">
+                <div class="font_h2">
+                    Итого
+                </div>
 
-            <div class="font-paragraph font_color_gray ml_auto">
-                {{dCost}} ₽
+                <div class="font_h2 ml_auto">
+                    {{ sumCost }} ₽
+                </div>
             </div>
         </div>
-        <div class="order__summary">
-            <div class="font_h2">
-                Итого
-            </div>
-
-            <div class="font_h2 ml_auto">
-                {{ sumCost }} ₽
-            </div>
-        </div>
-    </div>
+    {{else}}
+        <div class="font_h2">Тут пока ничего нет! Закажи что-нибудь)</div>
+    {{/if}}
 </div>

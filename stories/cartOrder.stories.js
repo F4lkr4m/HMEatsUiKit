@@ -62,3 +62,7 @@ historyOrder.args = {
   dCost: 200,
   sumCost: 300,
 }
+
+export const noItemsOrder = (args) => Order(args);
+
+noItemsOrder.args = {}
