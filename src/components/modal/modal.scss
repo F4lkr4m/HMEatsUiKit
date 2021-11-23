@@ -32,7 +32,6 @@
   background-color: var(--modalBackgroundColor);
 
   margin: auto;
-  width: var(--modalWidth);
 
   display: flex;
   flex-direction: column;
@@ -76,5 +75,23 @@
     justify-content: space-between;
     flex-wrap: nowrap;
     margin-bottom: var(--modalHeaderMarginBottom);
+  }
+
+  @media (min-width: 0px) and (max-width: 860px) {
+    & {
+      border-radius: 2px;
+    }
+
+    &-top-block {
+      padding: 10px;
+    }
+
+    &-center-block {
+      padding: 10px;
+    }
+
+    &-bottom-block {
+      padding: 10px;
+    }
   }
 }
