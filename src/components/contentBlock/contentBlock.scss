@@ -7,4 +7,11 @@
 
   box-sizing: border-box;
   padding: var(--contentBlockPadding);
+
+  @media (min-width: 0px) and (max-width: 860px) {
+    & {
+      border-radius: 2px;
+      padding: 10px;
+    }
+  }
 }
