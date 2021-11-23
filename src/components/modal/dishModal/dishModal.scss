@@ -28,3 +28,9 @@
   display: flex;
   flex-wrap: nowrap;
 }
+
+@media (min-width: 0px) and (max-width: 860px) {
+  .modal-dish__number {
+    margin: 0 10px 0 10px;
+  }
+}

@@ -40,3 +40,33 @@
 .font_color_gray {
   color: var(--color-gray);
 }
+
+@media (min-width: 0px) and (max-width: 860px) {
+  .font_h1 {
+    font-size: var(--fontSizeH1M);
+  }
+
+  .font_h2 {
+    font-size: var(--fontSizeH2M);
+  }
+
+  .font_h3 {
+    font-size: var(--fontSizeH3M);
+  }
+
+  .font_h4 {
+    font-size: var(--fontSizeH4M);
+  }
+
+  .font-body {
+    font-size: var(--fontSizeBodyM);
+  }
+
+  .font-paragraph {
+    font-size: var(--fontSizeParagraphM);
+  }
+
+  .font-label {
+    font-size: var(--fontSizeLabelM);
+  }
+}
