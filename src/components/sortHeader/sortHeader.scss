@@ -1,10 +1,10 @@
 :root {
-  --sortUnderheaderHeight: 100px;
   --sortUnderheaderMarginBottom: 5px;
 }
 
 .sort-header {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   align-items: center;
   justify-content: flex-start;
@@ -21,5 +21,10 @@
   &__button:hover .button-icon-v__icon {
     border-radius: 50%;
     background-color: var(--color-light-gray);
+  }
+  @media (min-width: 0px) and (max-width: 860px) {
+    &__button {
+      margin-bottom: 10px;
+    }
   }
 }
