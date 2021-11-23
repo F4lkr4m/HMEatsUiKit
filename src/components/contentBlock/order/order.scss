@@ -88,4 +88,11 @@
     flex-direction: row;
     padding: 10px 0 10px;
   }
+
+  @media (min-width: 0px) and (max-width: 860px) {
+    &__main-info-img {
+      border-radius: 8px;
+      width: 150px;
+    }
+  }
 }
