@@ -4,4 +4,10 @@
   outline: none;
   white-space: nowrap;
   font-family: var(--raleway-font);
+  font-size: var(--fontSizeParagraph);
+
+  padding: 10px;
+  box-sizing: border-box;
+
+  border-radius: 10px;
 }

@@ -2,7 +2,8 @@
   margin: 0 auto 0 auto;
   width: 424px;
   height: 248px;
-  border: 1px solid var(--contentBlockColor);
+  //border: 1px solid var(--contentBlockColor);
+  border: 1px solid #e2e2e2;
   border-radius: var(--cardRadius);
   box-sizing: border-box;
   padding: 20px;
@@ -24,7 +25,7 @@
     padding: var(--cardOuterPadding);
     box-sizing: border-box;
     margin: 15px 0  15px 0;
-    border: 1px solid var(--contentBlockColor);
+    border: 1px solid #e2e2e2;
     border-radius: var(--cardRadius);
     flex-direction: column;
     display: flex;
@@ -70,8 +71,8 @@
   }
 
   &__cvv-note {
-    //color: rgba(0,0,0,.4);
-    color: var(--contentBlockColor);
+    color: rgba(0,0,0,.4);
+    //color: var(--contentBlockColor);
     font-size: 14px;
     margin-left: auto;
     display: flex;
