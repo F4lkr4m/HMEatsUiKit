@@ -30,6 +30,7 @@
   border-radius: var(--modalRadius);
   color: var(--modalColor);
   background-color: var(--modalBackgroundColor);
+  width: var(--modalWidth);
 
   margin: auto;
 
@@ -79,6 +80,7 @@
 
   @media (min-width: 0px) and (max-width: 860px) {
     & {
+      width: 100%;
       border-radius: 12px;
     }
 
