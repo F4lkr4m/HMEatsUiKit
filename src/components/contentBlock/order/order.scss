@@ -45,6 +45,11 @@
     color: white;
   }
 
+  &__status_in-progress {
+    color: black;
+    background-color: #f2d700;
+  }
+
   &__status_cancel {
     background-color: red;
     color: black;

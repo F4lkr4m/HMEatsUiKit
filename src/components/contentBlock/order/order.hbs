@@ -12,15 +12,21 @@
                     <div class="font-paragraph font_color_gray order__row-margin">
                         {{addrs}}
                     </div>
-                    {{#if status}}
-                        <div class="order__status order__row-margin order__status_done">
-                            Выполнен
-                        </div>
-                    {{else}}
-                        <div class="order__status order__row-margin order__status_cancel">
-                            Отменен
-                        </div>
-                    {{/if}}
+                        {{#if inProgress}}
+                            <a href="/order/{{orderId}}" class="order__status order__row-margin order__status_in-progress">
+                                В процессе
+                            </a>
+                        {{/if}}
+                        {{#if done}}
+                            <div class="order__status order__row-margin order__status_done">
+                                Выполнен
+                            </div>
+                        {{/if}}
+                        {{#if cancel}}
+                            <div class="order__status order__row-margin order__status_cancel">
+                                Отменен
+                            </div>
+                        {{/if}}
                 {{/if}}
             </div>
             <div class="order__image-wrapper">

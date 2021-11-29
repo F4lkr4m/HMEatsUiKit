@@ -35,7 +35,7 @@ historyOrder.args = {
   img: 'http://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/96672465571661.5afc10a864fc2.jpg',
   date: '11.11.2021, 17:00',
   addrs: 'Москва, Улица Пушкина, дом Колотушкина',
-  status: true,
+  inProgress: true,
   items: [
     {
       name: 'Наггетсы',
