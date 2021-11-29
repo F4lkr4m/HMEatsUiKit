@@ -6,6 +6,10 @@
   --restaurantNavButtonFontSize: 16px;
 }
 
+.favourite_button {
+  cursor: pointer;
+}
+
 .restaurant-header {
   width: 100%;
   height: var(--restaurantHeaderHeight);
