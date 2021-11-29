@@ -54,10 +54,10 @@
 
   &-top-block {
     padding: calc(var(--modalOuterPadding)) var(--modalOuterPadding) calc(var(--modalOuterPadding) / 3) var(--modalOuterPadding);
-    border-bottom: 1px solid #e2e2e2;
   }
 
   &-center-block {
+    border-top: 1px solid #e2e2e2;
     padding: calc(var(--modalOuterPadding) / 3) var(--modalOuterPadding) calc(var(--modalOuterPadding) / 3) var(--modalOuterPadding);
   }
 

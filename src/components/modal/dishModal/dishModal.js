@@ -31,10 +31,13 @@ export class DishModal {
         checked: false,
       });
     });
-    const cg = new CheckboxGroup({
-      groupTitle: checkboxes.length !== 0? 'Хотите добавить ингредиенты?' : '',
-      checkboxes: checkboxes,
-    }).render();
+    let cg = undefined;
+    if (checkboxes.length !== 0) {
+      cg = new CheckboxGroup({
+        groupTitle: checkboxes.length !== 0 ? 'Хотите добавить ингредиенты?' : '',
+        checkboxes: checkboxes,
+      }).render();
+    }
 
 
     const radios = this.radios.reduce((prev, item) => {

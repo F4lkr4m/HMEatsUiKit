@@ -14,18 +14,19 @@
                 <img class="modal-dish__img" src="{{img}}">
                 <div class="font_h2">{{name}}</div>
             </div>
-            <div class="modal-center-block">
-                <div class="font-paragraph">
-                    {{desc}}
+            {{#ifCond desc radiosGroup checkboxGroup}}
+                <div class="modal-center-block">
+                    <div class="font-paragraph">
+                        {{desc}}
+                    </div>
+                    <div class="modal-dish__settings-wrapper modal-dish__radio-group">
+                        {{{ radiosGroup }}}
+                    </div>
+                    <div class="modal-dish__settings-wrapper modal-dish__checkboxes-group">
+                        {{{ checkboxGroup }}}
+                    </div>
                 </div>
-                <div class="modal-dish__settings-wrapper modal-dish__radio-group">
-                    {{{ radiosGroup }}}
-                </div>
-
-                <div class="modal-dish__settings-wrapper modal-dish__checkboxes-group">
-                    {{{ checkboxGroup }}}
-                </div>
-            </div>
+            {{/ifCond}}
             <div class="modal-bottom-block">
                 <div class="modal-dish__bottom-block">
                     <div class="modal-dish__selector">

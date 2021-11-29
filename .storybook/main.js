@@ -14,7 +14,11 @@ module.exports = {
       options: {
         partialDirs: [
           path.join(__dirname, './src/partials')
-        ]
+        ],
+        helperDirs: path.join(__dirname, './src/helpers'),
+        precompileOptions: {
+          knownHelpersOnly: false,
+        },
       },
     });
 

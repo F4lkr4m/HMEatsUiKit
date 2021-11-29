@@ -94,6 +94,17 @@ dishModal.args = {
   ],
 }
 
+export const dishModal2 = (args) => {
+  const block = new DishModal(args);
+  return block.render();
+}
+
+dishModal2.args = {
+  img: 'https://avatars.mds.yandex.net/i?id=8190d1c6f0a87d9dcc258676e69b5018-2431862-images-thumbs&n=13',
+  name: 'Чизбургер',
+  cost: 100,
+}
+
 export const continueModal = (args) => {
   const block = new ContinueModal(args);
   return block.render();
