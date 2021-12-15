@@ -7,4 +7,9 @@ export default {
 
 export const promoBlock = (args) => new PromoBlock(args).render();
 
-promoBlock.args = {}
+promoBlock.args = {
+  name: 'Акция на наггетсы',
+  desc: '30 по цене 20',
+  restId: 1,
+  img: 'https://calorizator.ru/sites/default/files/imagecache/product_512/product/chicken-mcnuggets.jpg',
+}
